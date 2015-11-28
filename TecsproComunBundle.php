@@ -1,6 +1,6 @@
 <?php
 
-namespace Tecspro\ComunBundle;
+namespace Tecspro\Bundle\ComunBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
