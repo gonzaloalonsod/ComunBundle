@@ -16,10 +16,10 @@
     },
     "autoload": {
         "psr-0": {
-            "Tecspro\\Bundle\\TecsproComunBundle": ""
+            "Tecspro\\Bundle\\ComunBundle": ""
         }
     },
-    "target-dir": "Tecspro/Bundle/TecsproComunBundle",
+    "target-dir": "Tecspro/Bundle/ComunBundle",
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
