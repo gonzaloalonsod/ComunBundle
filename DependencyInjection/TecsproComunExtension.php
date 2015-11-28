@@ -1,6 +1,6 @@
 <?php
 
-namespace Tecspro\ComunBundle\DependencyInjection;
+namespace Tecspro\Bundle\ComunBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
