@@ -1,0 +1,29 @@
+{
+    "name": "gonzakpo/comun",
+    "description": "Comun Bundle ofrece soluciones a circunstancias comunes en el desarrollo con Symfony",
+    "keywords": ["comun", "soluciones", "circunstancias", "Symfony"],
+    "homepage": "https://github.com/gonzakpo/ComunBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gonzalo Alonso",
+            "email": "gonkpo@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">2.2.0, ~2.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tecspro\\Bundle\\ComunBundle": ""
+        }
+    },
+    "target-dir": "Tecspro/Bundle/ComunBundle",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
