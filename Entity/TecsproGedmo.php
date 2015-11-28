@@ -1,6 +1,6 @@
 <?php
 
-namespace Tecspro\ComunBundle\Entity;
+namespace Tecspro\Bundle\ComunBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
