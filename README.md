@@ -5,7 +5,10 @@
 ``` yaml
 "gonzakpo/comun": "1.0.*@dev"
 ```
-
+### AppKernel:
+``` php
+new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
+```
 ### Use Gedmo install bundle Stof extension.
 ``` yaml
 "stof/doctrine-extensions-bundle": "v1.1.0",
