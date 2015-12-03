@@ -1,6 +1,6 @@
 <?php
 
-namespace Tecspro\ComunBundle\Services;
+namespace Tecspro\Bundle\ComunBundle\Services;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class HelpersObjectRelation {
