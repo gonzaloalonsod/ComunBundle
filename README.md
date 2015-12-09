@@ -18,3 +18,8 @@ use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
 
 class miClass extends TecsproGedmo {}
 ```
+
+## Author
+Gonzalo Alonso - gonkpo@gmail.com
+### Collaborators
+Chino - emmanuel_cabral@gmail.com
