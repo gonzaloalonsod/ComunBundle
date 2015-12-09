@@ -22,4 +22,4 @@ class miClass extends TecsproGedmo {}
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
 ### Collaborators
-Chino - emmanuel_cabral@gmail.com
+Chino - emmanuel_cabral@hotmail.com
