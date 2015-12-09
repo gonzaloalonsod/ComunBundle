@@ -8,3 +8,5 @@ services:
         class: Tecspro\ComunBundle\Services\Slugify
     tecspro_comun.helpers_object_relation:
         class: Tecspro\ComunBundle\Services\HelpersObjectRelation
+    tecspro_comun.mailer:
+        class: Tecspro\ComunBundle\Services\Mailer
