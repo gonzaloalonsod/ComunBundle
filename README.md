@@ -18,20 +18,14 @@ use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
 
 class miClass extends TecsproGedmo {}
 ```
-
-## Author
-Gonzalo Alonso - gonkpo@gmail.com
-### Collaborators
-Chino - emmanuel_cabral@hotmail.com
-
-Como usar los servicios del bundle?
+## Como usar los servicios del bundle?
 
 Cada servicio dentro del bundle tiene un .yml separado
 para usar el respectivo servicio. Solo hay que importar
 el .yml del servicio que se desea utilizar en el config.yml 
 del sistema.
 
-Entre ellos:
+## Entre ellos:
 
 service_helpers_object_relation: 
 retorna la diferencia de elementos entre arreglos, y los elementos comunes entre 2 arreglos.
@@ -41,3 +35,8 @@ filtra en una cadena de caracteres los caracteres raros, como acentos o simbolos
 
 service_mailer: 
 servicio que utiliza el servicio mailer para enviar correo electronicos.
+
+## Author
+Gonzalo Alonso - gonkpo@gmail.com
+### Collaborators
+Chino - emmanuel_cabral@hotmail.com
