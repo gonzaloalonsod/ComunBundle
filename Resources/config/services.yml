@@ -5,8 +5,8 @@ parameters:
 
 services:
     tecspro_comun.slugify:
-        class: Tecspro\ComunBundle\Services\Slugify
+        class: Tecspro\Bundle\ComunBundle\Services\Slugify
     tecspro_comun.helpers_object_relation:
-        class: Tecspro\ComunBundle\Services\HelpersObjectRelation
-    tecspro_comun.mailer:
-        class: Tecspro\ComunBundle\Services\Mailer
+        class: Tecspro\Bundle\ComunBundle\Services\HelpersObjectRelation
+    tecspro_comun.comun_mailer:
+        class: Tecspro\Bundle\ComunBundle\Services\ComunMailer
