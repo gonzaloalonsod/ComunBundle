@@ -5,4 +5,4 @@ parameters:
 
 services:
     tecspro_comun.helpers_object_relation:
-        class: Tecspro\Bundle\ComunBundle\Services\HelpersObjectRelationr
+        class: Tecspro\Bundle\ComunBundle\Services\HelpersObjectRelation
