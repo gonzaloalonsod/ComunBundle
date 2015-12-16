@@ -29,13 +29,24 @@ del sistema.
 
 service_helpers_object_relation: 
 retorna la diferencia de elementos entre arreglos, y los elementos comunes entre 2 arreglos.
+``` php
+$helpersObjectRelation = $this->get('tecspro_comun.helpers_object_relation');
 
+$array_resultado_A   = $helpersObjectRelation->getEntitiesToRemove($array_a, $array_b);
+
+$array_resultado_B = $helpersObjectRelation->getEntitiesToAdd($array_b, $array_a);
+```
 service_slugify: 
 filtra en una cadena de caracteres los caracteres raros, como acentos o simbolos.
 
 service_mailer: 
 servicio que utiliza el servicio mailer para enviar correo electronicos.
+Se le debe 
+``` php
+$services_comunmailer = $this->get('tecspro_comun.comun_mailer');
 
+$services_comunmailer->send_mailer($asunto, $remitente, $destinatarios, $mensaje);
+```
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
 ### Collaborators
