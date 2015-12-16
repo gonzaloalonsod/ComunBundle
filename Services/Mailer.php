@@ -4,18 +4,28 @@ namespace Tecspro\Bundle\ComunBundle\Services;
 
 class Mailer {
 
-    public function send_mailer($correos, $mensaje) {
+    protected $mailer;
+
+    public function __construct($mailer){
+        
+        $this->mailer = $mailer;
+    }
+
+    public function send_mailer($correos, $mensaje, $asunto, $origen) {
 
         if (!empty($correos)) {
-            $message = \Swift_Message::newInstance(
-                setSubject("Mensaje del sistema de alertas")
-                ->setFrom('siaval@gmail.com')
-                ->setTo($correos)
-                ->setBody($mensaje)
-                )
+
+            foreach ($correos as $correo) {
+
+            $message = \Swift_Message::newInstance()
+                ->setSubject($asunto)
+                ->setFrom($origen)
+                ->setTo('camuschinox@gmail.com')
+                ->setBody($mensaje);   
             ;
-            $this->get('mailer')->send($message);
-        }
+            $this->mailer->send($message);
+            }
+        }       
     }
 }
 
