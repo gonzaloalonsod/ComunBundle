@@ -11,20 +11,17 @@ class Mailer {
         $this->mailer = $mailer;
     }
 
-    public function send_mailer($correos, $mensaje, $asunto, $origen) {
+    public function send_mailer($asunto, $remitente, $correos, $mensaje) {
 
         if (!empty($correos)) {
 
-            foreach ($correos as $correo) {
-
             $message = \Swift_Message::newInstance()
                 ->setSubject($asunto)
-                ->setFrom($origen)
-                ->setTo('camuschinox@gmail.com')
+                ->setFrom($remitente)
+                ->setTo($correos)
                 ->setBody($mensaje);   
             ;
             $this->mailer->send($message);
-            }
         }       
     }
 }
