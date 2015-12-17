@@ -10,7 +10,7 @@ class Mailer {
         
         $this->mailer = $mailer;
     }
-
+    
     public function send_mailer($asunto, $remitente, $correos, $mensaje) {
 
         if (!empty($correos)) {
