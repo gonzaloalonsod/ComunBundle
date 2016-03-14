@@ -9,10 +9,7 @@
 ``` php
 new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
 ```
-### Use Gedmo install bundle Stof extension.
-``` yaml
-"stof/doctrine-extensions-bundle": "v1.1.0",
-```
+### Use Gedmo bundle Stof extension.
 ``` php
 use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
 
