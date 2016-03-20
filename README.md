@@ -20,9 +20,9 @@ stof_doctrine_extensions:
     default_locale: es_AR
     orm:
         default:
-          #tree: true
-          timestampable: true
-          #loggable: true
+            #tree: true
+            timestampable: true
+            #loggable: true
 ```
 #### Entity:
 ``` php
