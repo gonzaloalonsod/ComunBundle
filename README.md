@@ -14,6 +14,16 @@ new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
 ``` php
 new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 ```
+#### Configure:
+``` yaml
+stof_doctrine_extensions:
+    default_locale: es_AR
+    orm:
+        default:
+          #tree: true
+          timestampable: true
+          #loggable: true
+```
 #### Entity:
 ``` php
 use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
