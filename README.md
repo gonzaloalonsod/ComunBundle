@@ -10,6 +10,11 @@
 new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
 ```
 ### Use Gedmo bundle Stof extension.
+#### AppKernel:
+``` php
+new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+```
+#### Entity:
 ``` php
 use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
 
