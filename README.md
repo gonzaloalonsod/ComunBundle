@@ -59,6 +59,22 @@ $services_comunmailer = $this->get('tecspro_comun.comun_mailer');
 
 $services_comunmailer->send_mailer($asunto, $remitente, $destinatarios, $mensaje);
 ```
+## Funciones JS:
+### Controlar patron en un input formulario
+#### Incluir en la vista:
+``` js
+<script src="{{ asset('bundles/tecsprocomun/js/controla_patron.js') }}"></script>
+```
+#### Incluir en el type del formulario (este ejemplo permite solo numeros):
+``` php
+->add('campo', null, array(
+    'attr'  => array(
+        ...
+        'onkeypress' => 'return validaPatron(event, "[0-9]")',
+    )
+))
+```
+
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
 ### Collaborators
