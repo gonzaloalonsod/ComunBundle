@@ -3,8 +3,10 @@ function validaPatron(e, patron) {
     // Patron de entrada, en este caso solo aceptaria numeros o numeros y punto.
     // patron =[0-9]; patron =[0-9-.];
     tecla = (document.all) ? e.keyCode : e.which;
-    // Tecla de retroceso para borrar, siempre la permite
-    if (tecla==8) {
+    // Teclas de retroceso para borrar, tab, enter, delete, siempre la permite
+    if (tecla==8 || tecla==13) {
+        return true;
+    } else if (e.keyCode==9 || e.keyCode==46) {
         return true;
     }
     patron = new RegExp(patron);
