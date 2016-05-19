@@ -65,7 +65,18 @@ $services_comunmailer->send_mailer($asunto, $remitente, $destinatarios, $mensaje
 ``` js
 <script src="{{ asset('bundles/tecsprocomun/js/controla_patron.js') }}"></script>
 ```
-#### Incluir en el type del formulario (este ejemplo permite solo numeros):
+#### Incluir en el type del formulario (estos ejemplos permiten solo numeros):
+#### Opcion 1
+``` php
+->add('campo', null, array(
+    'attr'  => array(
+        ...
+        'class' => 'mwsValidaPatron',
+        'mwspatron' => '[0-9]',
+    )
+))
+```
+#### Opcion 2
 ``` php
 ->add('campo', null, array(
     'attr'  => array(
