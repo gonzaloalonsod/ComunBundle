@@ -86,6 +86,23 @@ $services_comunmailer->send_mailer($asunto, $remitente, $destinatarios, $mensaje
 ))
 ```
 
+### Reemplazar caracter
+#### Incluir en la vista:
+``` js
+<script src="{{ asset('bundles/tecsprocomun/js/reemplaza_valor.js') }}"></script>
+```
+#### Incluir en el type del formulario (este ejemplo reemplaza . por ,):
+``` php
+->add('campo', null, array(
+    'attr'  => array(
+        ...
+        'class' => 'mwsReemplazaValor',
+        'mwsreemplazar'    => '.',
+        'mwsreemplazarpor' => ',',
+    )
+))
+```
+
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
 ### Collaborators
