@@ -19,7 +19,7 @@ services:
     tecspro_comun.helpers_object_relation:
         class: Tecspro\Bundle\ComunBundle\Services\HelpersObjectRelation
     tecspro_comun.comun_mailer:
-class: Tecspro\Bundle\ComunBundle\Services\ComunMailer
+        class: Tecspro\Bundle\ComunBundle\Services\ComunMailer
 ```
 
 ## Entre ellos:
