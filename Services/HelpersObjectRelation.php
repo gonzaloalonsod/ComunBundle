@@ -24,19 +24,4 @@ class HelpersObjectRelation {
 
         return array_diff($olds_entities, $news_entities);
     }
-
-    // public function removeContainsEntity($originalEntities, $entities) {
-    //     // remove the relationship between the entity and the Task
-    //     foreach ($originalEntities as $entity) {
-    //         if (false === $task->getTags()->contains($entity)) {
-    //             // remove the Task from the Tag
-    //             $entity->getTasks()->removeElement($task);
-    //             // if it was a many-to-one relationship, remove the relationship like this
-    //             // $entity->setTask(null);
-    //             $em->persist($entity);
-    //             // if you wanted to delete the Tag entirely, you can also do that
-    //             // $em->remove($entity);
-    //         }
-    //     }
-    // }
 }
