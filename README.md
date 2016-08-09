@@ -9,27 +9,6 @@
 ``` php
 new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
 ```
-### Use Gedmo bundle Stof extension.
-#### AppKernel:
-``` php
-new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-```
-#### Configure:
-``` yaml
-stof_doctrine_extensions:
-    default_locale: es_AR
-    orm:
-        default:
-            #tree: true
-            timestampable: true
-            #loggable: true
-```
-#### Entity:
-``` php
-use Tecspro\Bundle\ComunBundle\Entity\TecsproGedmo;
-
-class miClass extends TecsproGedmo {}
-```
 ## Como usar los servicios del bundle?
 
 Cada servicio dentro del bundle tiene un .yml separado
@@ -44,9 +23,11 @@ retorna la diferencia de elementos entre arreglos, y los elementos comunes entre
 ``` php
 $helpersObjectRelation = $this->get('tecspro_comun.helpers_object_relation');
 
-$array_resultado_A   = $helpersObjectRelation->getEntitiesToRemove($array_a, $array_b);
+$originalEntities = $helpersObjectRelation->getOriginalEntity($entities);
 
-$array_resultado_B = $helpersObjectRelation->getEntitiesToAdd($array_b, $array_a);
+$entitiesAdd = $helpersObjectRelation->getEntitiesToAdd($entities, $originalEntities);
+
+$entitiesRemove = $helpersObjectRelation->getEntitiesToRemove($entities, $originalEntities);
 ```
 service_slugify: 
 filtra en una cadena de caracteres los caracteres raros, como acentos o simbolos.
