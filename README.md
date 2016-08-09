@@ -29,11 +29,13 @@ retorna la diferencia de elementos entre arreglos, y los elementos comunes entre
 ``` php
 $helpersObjectRelation = $this->get('tecspro_comun.helpers_object_relation');
 
-$originalEntities = $helpersObjectRelation->getOriginalEntity($entities);
+$originalEntities = $entity->getEntities()->getValues();
+$form->handleRequest($request);
+$newEntities = $entity->getEntities()->getValues();
 
-$entitiesAdd = $helpersObjectRelation->getEntitiesToAdd($entities, $originalEntities);
+$entitiesAdd = $helpersObjectRelation->getEntitiesToAdd($newEntities, $originalEntities);
 
-$entitiesRemove = $helpersObjectRelation->getEntitiesToRemove($entities, $originalEntities);
+$entitiesRemove = $helpersObjectRelation->getEntitiesToRemove($newEntities, $originalEntities);
 ```
 service_slugify: 
 filtra en una cadena de caracteres los caracteres raros, como acentos o simbolos.
