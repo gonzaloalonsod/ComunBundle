@@ -11,10 +11,16 @@ new Tecspro\Bundle\ComunBundle\TecsproComunBundle(),
 ```
 ## Como usar los servicios del bundle?
 
-Cada servicio dentro del bundle tiene un .yml separado
-para usar el respectivo servicio. Solo hay que importar
-el .yml del servicio que se desea utilizar en el config.yml 
-del sistema.
+Cada servicio dentro del bundle tiene un .yml separado para usar el respectivo servicio. Solo hay que importar el .yml del servicio que se desea utilizar en el config.yml del sistema.
+```yaml
+services:
+    tecspro_comun.slugify:
+        class: Tecspro\Bundle\ComunBundle\Services\Slugify
+    tecspro_comun.helpers_object_relation:
+        class: Tecspro\Bundle\ComunBundle\Services\HelpersObjectRelation
+    tecspro_comun.comun_mailer:
+class: Tecspro\Bundle\ComunBundle\Services\ComunMailer
+```
 
 ## Entre ellos:
 
