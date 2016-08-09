@@ -1,9 +1,9 @@
 # ComunBundle
 ## Comun Bundle ofrece soluciones a circunstancias comunes en el desarrollo con Symfony
 
-### Require:
-``` yaml
-"gonzakpo/comun": "1.0.*@dev"
+### Composer:
+```cli
+php composer.phar require gonzakpo/comun
 ```
 ### AppKernel:
 ``` php
