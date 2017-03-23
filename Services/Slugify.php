@@ -9,7 +9,7 @@ class Slugify {
      * @param  string  $value
      * @return string
      */
-    public static function ascii($value)
+    public function ascii($value)
     {
         foreach (static::charsArray() as $key => $val) {
             $value = str_replace($val, $key, $value);
@@ -24,9 +24,9 @@ class Slugify {
      * @param  string  $separator
      * @return string
      */
-    public static function slugify($title, $separator = '_')
+    public function slugify($title, $separator = '_')
     {
-        $title = static::ascii($title);
+        $title = $this->ascii($title);
         // Convert all dashes/underscores into separator
         $flip = $separator == '-' ? '_' : '-';
         $title = preg_replace('!['.preg_quote($flip).']+!u', $separator, $title);
