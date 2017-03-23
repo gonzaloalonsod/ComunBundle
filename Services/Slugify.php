@@ -24,7 +24,7 @@ class Slugify {
      * @param  string  $separator
      * @return string
      */
-    public static function slugify($title, $separator = '-')
+    public static function slugify($title, $separator = '_')
     {
         $title = static::ascii($title);
         // Convert all dashes/underscores into separator
