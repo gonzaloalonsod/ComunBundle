@@ -24,7 +24,7 @@ class Slugify {
      * @param  string  $separator
      * @return string
      */
-    public function slugify($title, $separator = '_')
+    public function slug($title, $separator = '_')
     {
         $title = $this->ascii($title);
         // Convert all dashes/underscores into separator
@@ -35,6 +35,20 @@ class Slugify {
         // Replace all separator characters and whitespace by a single separator
         $title = preg_replace('!['.preg_quote($separator).'\s]+!u', $separator, $title);
         return trim($title, $separator);
+    }
+
+    /**
+     * Use generate role user.
+     *
+     * @param  string  $text
+     * @return string
+     */
+    public function slugify($text) {
+        // replace all non letters or digits by -
+        $text = preg_replace('/\W+/', '_', $text);
+        // pasar a mayusculas
+        $text = strtoupper(trim($text, '_'));
+        return $text;
     }
 
     /**
